@@ -1,0 +1,20 @@
+# Godot 4 - arquivos a ignorar
+
+# Pasta de importações (cache pesado, não precisa no repo)
+.import/
+
+# Arquivos temporários
+*.tmp
+*.log
+*.import
+
+# Configurações locais do editor
+.editor_settings-4.tres
+
+# Exportações (builds)
+export.cfg
+export_presets.cfg
+*.pck
+*.exe
+*.apk
+*.zip
