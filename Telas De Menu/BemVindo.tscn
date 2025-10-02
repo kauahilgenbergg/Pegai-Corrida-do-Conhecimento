@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://bsslwh1e5l7ba"]
+
+[node name="BemVindo" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 351.0
+offset_bottom = 441.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.023074135, 0.0057475576, 0.31672013, 1)
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.448
+anchor_right = 0.5
+anchor_bottom = 0.448
+offset_left = -153.5
+offset_top = -14.568008
+offset_right = 155.5
+offset_bottom = 34.43199
+grow_horizontal = 2
+text = "Pronto para viajar no mundo da leitura?"
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.49100003
+anchor_top = 0.59800005
+anchor_right = 0.49100003
+anchor_bottom = 0.59800005
+offset_left = -20.341003
+offset_top = -15.718018
+offset_right = 20.658997
+offset_bottom = 15.281982
+grow_horizontal = 2
+grow_vertical = 2
+text = "Sim!"
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -36.5
+offset_top = 154.0
+offset_right = 50.5
+offset_bottom = 177.0
+grow_horizontal = 2
+text = "Bem vindo!"
+
+extends Control
+
+func _ready():
+    $Button.connect("pressed", Callable(self, "_on_start_pressed"))
+
+func _on_start_pressed():
+    get_tree().change_scene_to_file("res://login.tscn") # vai pra próxima tela
+
