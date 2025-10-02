@@ -1,5 +1,8 @@
 # Godot 4 - arquivos a ignorar
 
+# Ficheiros e pastas temporárias do editor Godot. Devem ser ignorados.
+/.godot/
+
 # Pasta de importações (cache pesado, não precisa no repo)
 .import/
 
