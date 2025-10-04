@@ -18,7 +18,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.023074135, 0.0057475576, 0.31672013, 1)
+color = Color(0.0230741, 0.00574756, 0.31672, 1)
 
 [node name="Label" type="Label" parent="Control"]
 layout_mode = 1
@@ -28,23 +28,23 @@ anchor_top = 0.448
 anchor_right = 0.5
 anchor_bottom = 0.448
 offset_left = -153.5
-offset_top = -14.568008
+offset_top = -14.568
 offset_right = 155.5
-offset_bottom = 34.43199
+offset_bottom = 34.432
 grow_horizontal = 2
 text = "Pronto para viajar no mundo da leitura?"
 
 [node name="Button" type="Button" parent="Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.49100003
-anchor_top = 0.59800005
-anchor_right = 0.49100003
-anchor_bottom = 0.59800005
-offset_left = -20.341003
-offset_top = -15.718018
-offset_right = 20.658997
-offset_bottom = 15.281982
+anchor_left = 0.491
+anchor_top = 0.598
+anchor_right = 0.491
+anchor_bottom = 0.598
+offset_left = -20.341
+offset_top = -15.718
+offset_right = 20.659
+offset_bottom = 15.282
 grow_horizontal = 2
 grow_vertical = 2
 text = "Sim!"
