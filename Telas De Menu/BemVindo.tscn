@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsslwh1e5l7ba"]
+
+[ext_resource type="Script" uid="uid://kdjhf1c6wlf" path="res://Telas De Menu/BemVindo.gd" id="1_8i07h"]
+
+[node name="BemVindo" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 351.0
+offset_bottom = 441.0
+script = ExtResource("1_8i07h")
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0230741, 0.00574756, 0.31672, 1)
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.448
+anchor_right = 0.5
+anchor_bottom = 0.448
+offset_left = -153.5
+offset_top = -14.568
+offset_right = 155.5
+offset_bottom = 34.432
+grow_horizontal = 2
+text = "Pronto para viajar no mundo da leitura?"
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.491
+anchor_top = 0.598
+anchor_right = 0.491
+anchor_bottom = 0.598
+offset_left = -20.341
+offset_top = -15.718
+offset_right = 20.659
+offset_bottom = 15.282
+grow_horizontal = 2
+grow_vertical = 2
+text = "Sim!"
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -36.5
+offset_top = 154.0
+offset_right = 50.5
+offset_bottom = 177.0
+grow_horizontal = 2
+text = "Bem vindo!"

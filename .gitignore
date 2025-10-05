@@ -21,3 +21,10 @@ export_presets.cfg
 *.exe
 *.apk
 *.zip
+
+# Godot-specific ignores
+.godot/
+*.translation
+
+# Mono-specific ignores
+.mono/

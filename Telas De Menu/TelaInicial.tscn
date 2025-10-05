@@ -1,0 +1,79 @@
+[gd_scene load_steps=3 format=3 uid="uid://1cwg76pelta"]
+
+[ext_resource type="Script" uid="uid://dfnqnycgcsgrq" path="res://Telas De Menu/TelaInicial.gd" id="1_4hdhv"]
+[ext_resource type="Texture2D" uid="uid://c8lfircs858cv" path="res://assets/player-tela-inicial.png" id="1_hnmdk"]
+
+[node name="TelaInicial" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 295.0
+offset_bottom = 399.0
+script = ExtResource("1_4hdhv")
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.023529412, 0.003921569, 0.31764707, 1)
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+offset_right = 80.0
+offset_bottom = 23.0
+text = "Seu_nome"
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -48.0
+offset_right = 48.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Sua_patente"
+
+[node name="Label3" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -71.0
+offset_bottom = 23.0
+grow_horizontal = 0
+text = "Seu_level"
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 104.0
+offset_top = -136.5
+offset_right = 189.0
+offset_bottom = -105.5
+grow_vertical = 2
+text = "Biblioteca"
+
+[node name="Button2" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 304.0
+offset_right = 177.0
+offset_bottom = 335.0
+text = "Correr"
+
+[node name="Node2D" type="Node2D" parent="Control"]
+position = Vector2(139, 189)
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/Node2D"]
+position = Vector2(3, 17)
+scale = Vector2(5.321429, 5.3214283)
+texture = ExtResource("1_hnmdk")
+
+[connection signal="pressed" from="Control/Button2" to="Control" method="_on_button_2_pressed"]
