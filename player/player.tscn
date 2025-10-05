@@ -1,14 +1,14 @@
 [gd_scene load_steps=76 format=3 uid="uid://4meedtqrgdt6"]
 
-[ext_resource type="Script" uid="uid://bguyne2ktgsuk" path="res://player.gd" id="1_b26j0"]
-[ext_resource type="Texture2D" uid="uid://b3d87n4tpmcqn" path="res://assets/player_idle_up.png" id="1_sweqy"]
-[ext_resource type="Texture2D" uid="uid://djpp6j40ixrwc" path="res://assets/player_run_down.png" id="2_2hs0m"]
-[ext_resource type="Texture2D" uid="uid://b6rnot3t51vty" path="res://assets/player_idle_down.png" id="2_n7ghd"]
-[ext_resource type="Texture2D" uid="uid://40p50muc7sge" path="res://assets/player_run_left.png" id="3_1jxqw"]
-[ext_resource type="Texture2D" uid="uid://1t7ltr3o2lgd" path="res://assets/player_idle_left.png" id="3_nvl01"]
-[ext_resource type="Texture2D" uid="uid://gm6pm0vjh3jp" path="res://assets/player_run_right.png" id="4_dw050"]
-[ext_resource type="Texture2D" uid="uid://dofkgwvdxtkga" path="res://assets/player_idle_right.png" id="4_ivps1"]
-[ext_resource type="Texture2D" uid="uid://bueflcsyopdlu" path="res://assets/player_run_up.png" id="5_b26j0"]
+[ext_resource type="Script" uid="uid://bguyne2ktgsuk" path="res://player/player.gd" id="1_b26j0"]
+[ext_resource type="Texture2D" uid="uid://1rfi63wulrd7" path="res://assets/player_idle_up.png" id="1_sweqy"]
+[ext_resource type="Texture2D" uid="uid://c5yqem2euvnit" path="res://assets/player_run_down.png" id="2_2hs0m"]
+[ext_resource type="Texture2D" uid="uid://da4lkwsiah6nc" path="res://assets/player_idle_down.png" id="2_n7ghd"]
+[ext_resource type="Texture2D" uid="uid://dadlc34oq3hpy" path="res://assets/player_run_left.png" id="3_1jxqw"]
+[ext_resource type="Texture2D" uid="uid://cdq82utsulnc7" path="res://assets/player_idle_left.png" id="3_nvl01"]
+[ext_resource type="Texture2D" uid="uid://bhgq0qe5akmb6" path="res://assets/player_run_right.png" id="4_dw050"]
+[ext_resource type="Texture2D" uid="uid://bn7njph4v6afk" path="res://assets/player_idle_right.png" id="4_ivps1"]
+[ext_resource type="Texture2D" uid="uid://c0pdxwxc70484" path="res://assets/player_run_up.png" id="5_b26j0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fddr8"]
 atlas = ExtResource("2_n7ghd")
