@@ -14,4 +14,4 @@ func _ready():
 func _on_start_pressed():
 	# Este código só roda se o botão for pressionado e o sinal conectado.
 	print("O botão foi pressionado! Tentando carregar a cena 'Login'...")
-	get_tree().change_scene_to_file("res://Telas De Menu/Login.tscn")
+	get_tree().change_scene_to_file("res://Telas De Menu/Login/Login.tscn")
