@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cx264p5efpxfg"]
 
-[ext_resource type="Script" uid="uid://ljl7cj6r4vne" path="res://Telas De Menu/Login.gd" id="1_vqjxh"]
+[ext_resource type="Script" uid="uid://ljl7cj6r4vne" path="res://Telas De Menu/Login/Login.gd" id="1_vqjxh"]
 
 [node name="Login" type="Node2D"]
 

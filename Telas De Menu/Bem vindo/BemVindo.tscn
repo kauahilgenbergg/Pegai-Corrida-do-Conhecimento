@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bsslwh1e5l7ba"]
 
-[ext_resource type="Script" uid="uid://kdjhf1c6wlf" path="res://Telas De Menu/BemVindo.gd" id="1_8i07h"]
+[ext_resource type="Script" uid="uid://kdjhf1c6wlf" path="res://Telas De Menu/Bem vindo/BemVindo.gd" id="1_8i07h"]
 
 [node name="BemVindo" type="Node2D"]
 

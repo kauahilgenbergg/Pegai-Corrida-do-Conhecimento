@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://1cwg76pelta"]
 
-[ext_resource type="Script" uid="uid://dfnqnycgcsgrq" path="res://Telas De Menu/TelaInicial.gd" id="1_4hdhv"]
-[ext_resource type="Texture2D" uid="uid://c8lfircs858cv" path="res://assets/Sprites/player-tela-inicial.png" id="1_hnmdk"]
+[ext_resource type="Script" uid="uid://dfnqnycgcsgrq" path="res://Telas De Menu/Tela inicial/TelaInicial.gd" id="1_4hdhv"]
+[ext_resource type="Texture2D" uid="uid://8ygjxh7hfj1b" path="res://assets/Sprites/player-tela-inicial.png" id="1_hnmdk"]
 
 [node name="TelaInicial" type="Node2D"]
 
