@@ -12,4 +12,4 @@ func _on_play_pressed():
 		return
 	
 	print("Jogador:", nome, "| Idade:", idade)
-	get_tree().change_scene_to_file("res://Telas De Menu/TelaInicial.tscn") # troca pra cena principal do jogo
+	get_tree().change_scene_to_file("res://Telas De Menu/Tela inicial/TelaInicial.tscn") # troca pra cena principal do jogo

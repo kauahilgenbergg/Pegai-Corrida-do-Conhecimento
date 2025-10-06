@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://4meedtqrgdt6" path="res://player/player.tscn" id="1_kj525"]
 [ext_resource type="Script" uid="uid://bblyu5cb8f06" path="res://Jogo/main.gd" id="1_lmy5y"]
 [ext_resource type="Script" uid="uid://j2falgjce868" path="res://Jogo/scrolling_map.gd" id="2_6rsy8"]
-[ext_resource type="Texture2D" uid="uid://cgd0o2v5jeist" path="res://assets/tileset/Solaria Demo Tiles.png" id="2_en7g6"]
+[ext_resource type="Texture2D" uid="uid://dxvabpnik848a" path="res://assets/tileset/Solaria Demo Tiles.png" id="2_en7g6"]
 [ext_resource type="PackedScene" uid="uid://c81qj76k7rqpe" path="res://obstacle/obstacle.tscn" id="4_6rsy8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6rsy8"]
