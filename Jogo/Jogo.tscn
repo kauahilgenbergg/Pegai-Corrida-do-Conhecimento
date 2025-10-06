@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://chnp4ipvmrydp"]
 
-[ext_resource type="Texture2D" uid="uid://c1cfojbrqdvih" path="res://assets/19.07a - Gentle Forest 3.0a ($0 palettes)/map samples/sample 1.png" id="1_hl7ks"]
+[ext_resource type="Texture2D" uid="uid://ncg6u36c1bbp" path="res://assets/19.07a - Gentle Forest 3.0a ($0 palettes)/map samples/sample 1.png" id="1_hl7ks"]
 [ext_resource type="Script" uid="uid://b33s3mxq8oaho" path="res://Jogo/texture_rect.gd" id="2_nvq86"]
-[ext_resource type="PackedScene" uid="uid://4meedtqrgdt6" path="res://player.tscn" id="2_qe058"]
+[ext_resource type="PackedScene" uid="uid://4meedtqrgdt6" path="res://player/player.tscn" id="2_qe058"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qe058"]
 size = Vector2(1527, 2208)
