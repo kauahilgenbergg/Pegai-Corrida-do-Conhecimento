@@ -1,26 +1,26 @@
+# scrolling_world.gd
 extends Node2D
-## A velocidade com que o cenário se move para cima, em pixels por segundo.
-## Você pode ajustar este valor diretamente no Inspector do Godot.
+
+## A velocidade com que o cenário se move para baixo, em pixels por segundo.
 @export var scroll_speed = 150.0
 
-## A altura de UM "pedaço" do seu mapa.
-## Este valor DEVE ser igual à altura de uma tela do seu jogo (Viewport Height).
-## Ex: 1280 pixels. Você precisa configurar este valor no Inspector.
-@export var chunk_height = 900.0
+## A altura de UM "pedaço" do seu mapa (ex: 1280).
+@export var chunk_height = 900
 
 
-# A função _process é chamada a cada frame.
 func _process(delta):
+	# Garante que o script não faça nada se a altura não for configurada.
 	if chunk_height == 0:
 		return
 
-	# CORREÇÃO: Usamos '+=' para mover o mapa para BAIXO.
+	# CORREÇÃO DEFINITIVA: Usamos '+=' para mover o nó World para BAIXO no espaço do jogo.
+	# Isso faz o cenário parecer que está se movendo PARA BAIXO na tela.
 	position.y += scroll_speed * delta
 
-	# CORREÇÃO: A lógica do loop infinito foi invertida.
+	# CORREÇÃO DEFINITIVA: A lógica do loop foi ajustada para o movimento para baixo.
 	# Verificamos se a posição Y do nó se tornou maior ou igual à altura de um pedaço.
-	# Isso significa que o primeiro "pedaço" do mapa já saiu completamente da tela por cima.
+	# Isso significa que o primeiro "pedaço" do mapa (Chunk A) já saiu completamente da tela por cima.
 	if position.y >= chunk_height:
-		# Quando isso acontece, nós instantaneamente reposicionamos o mapa para o início do loop.
-		# A transição é imperceptível, criando a ilusão de um caminho infinito.
+		# Quando isso acontece, nós subtraímos a altura de um chunk da posição atual.
+		# Isso "teletransporta" o mapa de volta para o início do loop de forma imperceptível.
 		position.y -= chunk_height
