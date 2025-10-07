@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Pegaí: Corrida do Conhecimento"
-run/main_scene="uid://bsslwh1e5l7ba"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+run/main_scene="uid://ba2vwvlcyfxic"
+config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]

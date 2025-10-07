@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://c81qj76k7rqpe"]
+[gd_scene load_steps=4 format=3 uid="uid://c81qj76k7rqpe"]
 
+[ext_resource type="Script" uid="uid://mjk705baatqe" path="res://obstacle/obstacle.gd" id="1_qlgnj"]
 [ext_resource type="Texture2D" uid="uid://cucwbmmdo27ou" path="res://assets/obstaculos/png-clipart-pixel-art-knight-knight-fictional-character-cartoon-thumbnail.png" id="1_utmkd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_utmkd"]
 size = Vector2(35.5, 35.5)
 
 [node name="obstacle" type="StaticBody2D"]
+script = ExtResource("1_qlgnj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.114942506, 0.114942506)
@@ -14,3 +16,7 @@ texture = ExtResource("1_utmkd")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.25, 0.25)
 shape = SubResource("RectangleShape2D_utmkd")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
