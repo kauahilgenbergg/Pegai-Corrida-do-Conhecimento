@@ -2,7 +2,7 @@
 extends Node2D
 
 ## A velocidade com que o cenário se move para baixo, em pixels por segundo.
-@export var scroll_speed = 150.0
+@export var scroll_speed = 400.0
 
 ## A altura de UM "pedaço" do seu mapa (ex: 1280).
 @export var chunk_height = 900
