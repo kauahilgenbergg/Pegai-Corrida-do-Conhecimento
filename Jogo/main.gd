@@ -7,8 +7,8 @@ extends Node2D
 var spawn_timer: Timer
 
 # --- NOVAS VARIÁVEIS PARA O CRONÔMETRO ---
-var elapsed_time: float = 0.0      # Guarda o tempo decorrido em segundos
-var is_game_active: bool = true    # Controla se o cronômetro deve rodar
+var elapsed_time: float = 0.0 # Guarda o tempo decorrido em segundos
+var is_game_active: bool = true # Controla se o cronômetro deve rodar
 
 func _ready():
 	# Garante que o texto e os botões comecem escondidos
@@ -57,20 +57,22 @@ func _spawn_obstacle(offset_y = 0):
 	obstacle.map_speed = map_speed
 	obstacle.z_index = 1
 
-# --- FUNÇÃO MODIFICADA ---
+# --- FUNÇÃO MODIFICADA PARA MOSTRAR O BOTÃO 'JOGAR NOVAMENTE' NA VITÓRIA ---
 func game_over(venceu: bool):
 	is_game_active = false
 	get_tree().paused = true
 	
 	if venceu:
 		$Label.text = "Parabéns! Seu tempo: %.3f" % elapsed_time
-		$Button.visible = false # O botão de reiniciar não aparece na vitória
 	else:
 		$Label.text = "Você perdeu..."
-		$Button.visible = true # O botão de reiniciar aparece na derrota
 	
 	$Label.visible = true
-	# NOVO: O Button2 (Voltar ao Menu) aparece em ambos os casos (vitória ou derrota)
+	
+	# O Button (Reiniciar) SEMPRE aparece no game over.
+	$Button.visible = true 
+	
+	# O Button2 (Voltar ao Menu) aparece em ambos os casos.
 	$Button2.visible = true
 
 func _on_button_pressed() -> void:

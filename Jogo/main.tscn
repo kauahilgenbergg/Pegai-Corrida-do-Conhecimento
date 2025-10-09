@@ -424,12 +424,16 @@ shape = SubResource("RectangleShape2D_lmy5y")
 position = Vector2(140, 485)
 shape = SubResource("RectangleShape2D_lmy5y")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="limitesdacamera"]
-position = Vector2(449, 771)
+[node name="vitoria" type="Area2D" parent="limitesdacamera"]
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="limitesdacamera/vitoria"]
+position = Vector2(473, 106)
 shape = SubResource("RectangleShape2D_vcpia")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="limitesdacamera"]
-position = Vector2(473, 106)
+[node name="derrota" type="Area2D" parent="limitesdacamera"]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="limitesdacamera/derrota"]
+position = Vector2(449, 771)
 shape = SubResource("RectangleShape2D_vcpia")
 
 [node name="Label" type="Label" parent="."]
@@ -439,7 +443,7 @@ offset_left = 150.0
 offset_top = 505.0
 offset_right = 566.0
 offset_bottom = 588.0
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 30
 text = "Resultado"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -453,7 +457,7 @@ offset_top = 586.0
 offset_right = 429.0
 offset_bottom = 616.0
 theme_override_font_sizes/font_size = 15
-text = "Tentar novamente"
+text = "Jogar novamente"
 
 [node name="Label2" type="Label" parent="."]
 z_index = 1

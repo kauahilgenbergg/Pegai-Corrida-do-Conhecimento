@@ -2,14 +2,21 @@ extends CharacterBody2D
 
 @export var speed = 300.0
 @onready var animated_sprite = $AnimatedSprite2D
-# Pega uma referência para o próprio colisor do player
-@onready var player_collider = $CollisionShape2D
+# O player_collider não é usado na lógica de vitória/derrota.
+# @onready var player_collider = $CollisionShape2D
 
-# Referências para as áreas de vitória e derrota
-@onready var lose_zone = get_node("/root/Main/limitesdacamera/CollisionShape2D3")
-@onready var win_zone = get_node("/root/Main/limitesdacamera/CollisionShape2D4")
+# Referências CORRIGIDAS para os nós Area2D.
+# O caminho '..' sobe para o nó pai (Main) e desce para o nó correto.
+@onready var win_area = get_node("../limitesdacamera/vitoria")
+@onready var lose_area = get_node("../limitesdacamera/derrota")
 
 var game_ended = false # Variável para garantir que o jogo termine apenas uma vez
+
+func _ready():
+	# Conecta o sinal 'body_entered' dos Area2D.
+	# O erro de 'null instance' deve ter sumido com a correção do caminho acima.
+	win_area.body_entered.connect(_on_win_area_body_entered)
+	lose_area.body_entered.connect(_on_lose_area_body_entered)
 
 func _physics_process(delta):
 	# Se o jogo já terminou, não faz mais nada
@@ -24,29 +31,22 @@ func _physics_process(delta):
 	move_and_slide()
 	# ----------------------------------------------
 
-	# --- NOVA LÓGICA DE COLISÃO MANUAL ---
-	check_manual_collision()
+	# A colisão agora é feita por sinais.
 
-func check_manual_collision():
-	# Pega o "retângulo" que delimita o player no mundo do jogo
-	var player_rect = player_collider.get_global_transform() * player_collider.shape.get_rect()
-
-	# Pega o "retângulo" da zona de derrota
-	var lose_rect = lose_zone.get_global_transform() * lose_zone.shape.get_rect()
-
-	# Pega o "retângulo" da zona de vitória
-	var win_rect = win_zone.get_global_transform() * win_zone.shape.get_rect()
-
-	# Verifica se o retângulo do player se cruza com o da zona de derrota
-	if player_rect.intersects(lose_rect):
+func _on_lose_area_body_entered(body: Node2D):
+	# Verifica se o corpo que entrou é o Player (o próprio script)
+	# e se o jogo ainda não terminou.
+	if body == self and not game_ended:
 		print("Colidiu com a zona de derrota!")
-		game_ended = true # Avisa que o jogo acabou
+		game_ended = true
 		get_parent().game_over(false) # Chama a função no Main, avisando que perdeu
 
-	# Verifica se o retângulo do player se cruza com o da zona de vitória
-	if player_rect.intersects(win_rect):
+func _on_win_area_body_entered(body: Node2D):
+	# Verifica se o corpo que entrou é o Player (o próprio script)
+	# e se o jogo ainda não terminou.
+	if body == self and not game_ended:
 		print("Colidiu com a zona de vitória!")
-		game_ended = true # Avisa que o jogo acabou
+		game_ended = true
 		get_parent().game_over(true) # Chama a função no Main, avisando que venceu
 
 func update_animation():
