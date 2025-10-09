@@ -26,7 +26,7 @@ func _physics_process(delta):
 	# --- Seu código de movimento (sem alterações) ---
 	var horizontal_direction = Input.get_axis("move_left", "move_right")
 	velocity.x = horizontal_direction * speed
-	velocity.y = -20
+	velocity.y = -40
 	update_animation()
 	move_and_slide()
 	# ----------------------------------------------
