@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://1cwg76pelta"]
+[gd_scene load_steps=4 format=3 uid="uid://1cwg76pelta"]
 
 [ext_resource type="Script" uid="uid://dfnqnycgcsgrq" path="res://Telas De Menu/Tela inicial/TelaInicial.gd" id="1_4hdhv"]
-[ext_resource type="Texture2D" uid="uid://dx4lvdfqh3s0t" path="res://assets/Sprites/player-tela-inicial.png" id="1_hnmdk"]
+[ext_resource type="PackedScene" uid="uid://cq2rjwskkc24h" path="res://player/playerlobby.tscn" id="2_4wbtd"]
+[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_c223o"]
 
 [node name="TelaInicial" type="Node2D"]
 
@@ -12,68 +13,101 @@ offset_right = 295.0
 offset_bottom = 399.0
 script = ExtResource("1_4hdhv")
 
-[node name="ColorRect" type="ColorRect" parent="Control"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.0235294, 0.00392157, 0.317647, 1)
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(360, 450)
+texture = ExtResource("2_c223o")
 
 [node name="Label" type="Label" parent="Control"]
 layout_mode = 1
-offset_right = 80.0
-offset_bottom = 23.0
-text = "Seu_nome"
+offset_left = 63.0
+offset_top = 31.0
+offset_right = 144.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = "Kauã "
 
 [node name="Label2" type="Label" parent="Control"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -48.0
-offset_right = 48.0
-offset_bottom = 23.0
+offset_left = 133.5
+offset_top = 32.0
+offset_right = 328.5
+offset_bottom = 74.0
 grow_horizontal = 2
-text = "Sua_patente"
+theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = "Leitor Master"
 
 [node name="Label3" type="Label" parent="Control"]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -71.0
-offset_bottom = 23.0
+offset_left = 329.0
+offset_top = 34.0
+offset_right = 386.0
+offset_bottom = 76.0
 grow_horizontal = 0
-text = "Seu_level"
+theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = "999"
+
+[node name="Playerlobby" parent="Control" instance=ExtResource("2_4wbtd")]
+position = Vector2(376, 621)
 
 [node name="Button" type="Button" parent="Control"]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 104.0
-offset_top = -136.5
-offset_right = 189.0
-offset_bottom = -105.5
+offset_left = 65.0
+offset_top = -51.5
+offset_right = 216.0
+offset_bottom = 25.5
 grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0.59607846, 0.89411765, 1)
+theme_override_font_sizes/font_size = 30
 text = "Biblioteca"
 
 [node name="Button2" type="Button" parent="Control"]
 layout_mode = 0
-offset_left = 119.0
-offset_top = 304.0
-offset_right = 177.0
-offset_bottom = 335.0
+offset_left = 211.0
+offset_top = 673.0
+offset_right = 530.0
+offset_bottom = 818.0
+theme_override_colors/font_color = Color(0, 0.59607846, 0.89411765, 1)
+theme_override_font_sizes/font_size = 100
 text = "Correr"
 
-[node name="Node2D" type="Node2D" parent="Control"]
-position = Vector2(139, 189)
+[node name="Sprite2D2" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(360, 450)
+texture = ExtResource("2_c223o")
 
-[node name="Sprite2D" type="Sprite2D" parent="Control/Node2D"]
-position = Vector2(3, 17)
-scale = Vector2(5.32143, 5.32143)
-texture = ExtResource("1_hnmdk")
+[node name="ContagemLabel" type="Label" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.5
+offset_top = 218.5
+offset_right = 542.5
+offset_bottom = 301.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 55
+text = "Partida iniciando em ..."
+horizontal_alignment = 1
+
+[node name="ContagemTimer" type="Timer" parent="Control"]
+one_shot = true
 
 [connection signal="pressed" from="Control/Button2" to="Control" method="_on_button_2_pressed"]
+[connection signal="timeout" from="Control/ContagemTimer" to="Control" method="_on_contagem_timer_timeout"]

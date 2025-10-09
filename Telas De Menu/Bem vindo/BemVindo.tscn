@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bsslwh1e5l7ba"]
+[gd_scene load_steps=3 format=3 uid="uid://bsslwh1e5l7ba"]
 
 [ext_resource type="Script" uid="uid://kdjhf1c6wlf" path="res://Telas De Menu/Bem vindo/BemVindo.gd" id="1_8i07h"]
+[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_7mae7"]
 
 [node name="BemVindo" type="Node2D"]
 
@@ -11,27 +12,25 @@ offset_right = 351.0
 offset_bottom = 441.0
 script = ExtResource("1_8i07h")
 
-[node name="ColorRect" type="ColorRect" parent="Control"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.0230741, 0.00574756, 0.31672, 1)
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(360, 450)
+texture = ExtResource("2_7mae7")
 
 [node name="Label" type="Label" parent="Control"]
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 0.448
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.448
-offset_left = -153.5
-offset_top = -14.568
-offset_right = 155.5
-offset_bottom = 34.432
+anchor_bottom = 0.5
+offset_left = -101.5
+offset_top = 165.5
+offset_right = 488.5
+offset_bottom = 248.5
 grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_font_sizes/font_size = 30
 text = "Pronto para viajar no mundo da leitura?"
 
 [node name="Button" type="Button" parent="Control"]
@@ -41,12 +40,14 @@ anchor_left = 0.491
 anchor_top = 0.598
 anchor_right = 0.491
 anchor_bottom = 0.598
-offset_left = -20.341
-offset_top = -15.718
-offset_right = 20.659
-offset_bottom = 15.282
+offset_left = 89.659
+offset_top = 192.28201
+offset_right = 303.659
+offset_bottom = 337.282
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0.59607846, 0.89411765, 1)
+theme_override_font_sizes/font_size = 100
 text = "Sim!"
 
 [node name="Label2" type="Label" parent="Control"]
@@ -54,9 +55,11 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -36.5
-offset_top = 154.0
-offset_right = 50.5
-offset_bottom = 177.0
+offset_left = 28.5
+offset_top = 305.0
+offset_right = 353.5
+offset_bottom = 388.0
 grow_horizontal = 2
+theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_font_sizes/font_size = 60
 text = "Bem vindo!"

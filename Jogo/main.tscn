@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://ba2vwvlcyfxic"]
+[gd_scene load_steps=10 format=4 uid="uid://ba2vwvlcyfxic"]
 
 [ext_resource type="PackedScene" uid="uid://4meedtqrgdt6" path="res://player/player.tscn" id="1_kj525"]
 [ext_resource type="Script" uid="uid://bblyu5cb8f06" path="res://Jogo/main.gd" id="1_lmy5y"]
@@ -384,6 +384,9 @@ sources/0 = SubResource("TileSetAtlasSource_6rsy8")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lmy5y"]
 size = Vector2(212.5, 3308)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vcpia"]
+size = Vector2(1142, 20)
+
 [node name="Main" type="Node2D"]
 y_sort_enabled = true
 script = ExtResource("1_lmy5y")
@@ -394,6 +397,7 @@ spawn_interval = 0.1
 position = Vector2(360, 810)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+z_index = 1
 position = Vector2(360, 556.995)
 zoom = Vector2(1.545, 1.545)
 position_smoothing_enabled = true
@@ -419,3 +423,57 @@ shape = SubResource("RectangleShape2D_lmy5y")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="limitesdacamera"]
 position = Vector2(140, 485)
 shape = SubResource("RectangleShape2D_lmy5y")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="limitesdacamera"]
+position = Vector2(449, 771)
+shape = SubResource("RectangleShape2D_vcpia")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="limitesdacamera"]
+position = Vector2(473, 106)
+shape = SubResource("RectangleShape2D_vcpia")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+z_index = 1
+offset_left = 150.0
+offset_top = 505.0
+offset_right = 566.0
+offset_bottom = 588.0
+theme_override_font_sizes/font_size = 40
+text = "Resultado"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+process_mode = 3
+visible = false
+z_index = 1
+offset_left = 286.0
+offset_top = 586.0
+offset_right = 429.0
+offset_bottom = 616.0
+theme_override_font_sizes/font_size = 15
+text = "Tentar novamente"
+
+[node name="Label2" type="Label" parent="."]
+z_index = 1
+offset_left = 145.0
+offset_top = 801.0
+offset_right = 207.0
+offset_bottom = 824.0
+theme_override_colors/font_color = Color(0.9999998, 0.95101887, 0.1594322, 1)
+text = "Tempo: "
+
+[node name="Button2" type="Button" parent="."]
+process_mode = 3
+visible = false
+z_index = 1
+offset_left = 511.0
+offset_top = 797.0
+offset_right = 564.0
+offset_bottom = 827.0
+theme_override_font_sizes/font_size = 15
+text = "Lobby"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

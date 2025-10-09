@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var map_speed: float = 400.0
-@export var horizontal_speed: float = 150.0
+@export var horizontal_speed: float = 50.0
 var direction: int = 1  # 1 = direita, -1 = esquerda
 
 func _ready():
