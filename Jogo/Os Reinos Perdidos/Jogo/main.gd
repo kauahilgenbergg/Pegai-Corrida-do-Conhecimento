@@ -1,6 +1,7 @@
 extends Node2D
 
 # Variável estática para guardar o tempo entre reinícios de cena.
+# Nota: Agora guarda o tempo *restante*
 static var saved_elapsed_time: float = 0.0
 
 @export var obstacle_scene: PackedScene
@@ -10,7 +11,8 @@ static var saved_elapsed_time: float = 0.0
 var spawn_timer: Timer
 
 # --- VARIÁVEIS PARA O CRONÔMETRO E JOGO ---
-var elapsed_time: float = 0.0 # Guarda o tempo decorrido em segundos
+const INITIAL_TIME: float = 30.0 # <--- NOVO: Define o tempo inicial de 30 segundos
+var elapsed_time: float = 0.0 # Guarda o tempo restante em segundos
 var is_game_active: bool = true # Controla se o cronômetro deve rodar
 
 # --- NOVAS VARIÁVEIS PARA A PERGUNTA ---
@@ -21,9 +23,10 @@ func _ready():
 	if saved_elapsed_time > 0.0:
 		elapsed_time = saved_elapsed_time
 		# Limpa o salvo para que um próximo Game Over normal comece do zero.
-		saved_elapsed_time = 0.0 
+		saved_elapsed_time = 0.0
 	else:
-		elapsed_time = 0.0
+		# Inicializa com 30.0s se não houver tempo salvo
+		elapsed_time = INITIAL_TIME
 	
 	# Garante que o texto e os botões comecem escondidos
 	$Label.visible = false
@@ -37,7 +40,8 @@ func _ready():
 		$Pergunta.visible = false
 	
 	# Inicia o texto do cronômetro, usando o tempo restaurado
-	$Label2.text = "Tempo: %.3f" % elapsed_time
+	# Ajustamos o texto para indicar 'Restante'
+	$Label2.text = "Restante: %.3f" % elapsed_time
 	
 	# Spawn inicial garantido no primeiro frame
 	call_deferred("_spawn_initial_obstacles")
@@ -52,8 +56,18 @@ func _ready():
 
 func _process(delta: float) -> void:
 	if is_game_active:
-		elapsed_time += delta
-		$Label2.text = "Tempo: %.3f" % elapsed_time
+		# 1. DECREMENTA o tempo
+		elapsed_time -= delta
+		
+		# 2. ATUALIZA o texto da Label2
+		$Label2.text = "Restante: %.3f" % max(0.0, elapsed_time) # Garante que não mostre negativo
+		
+		# 3. CONDIÇÃO DE VITÓRIA POR TEMPO
+		if elapsed_time <= 0.0:
+			# Para o jogo, pois o jogador 'sobreviveu' ao tempo
+			elapsed_time = 0.0 # Garante o valor exato
+			game_over(true) # Chama a função de game over como 'venceu'
+			is_game_active = false # Para o _process
 
 func _spawn_initial_obstacles():
 	var screen_top = 0
@@ -80,7 +94,8 @@ func game_over(venceu: bool):
 	get_tree().paused = true
 	
 	if venceu:
-		$Label.text = "Parabéns! Seu tempo: %.3f" % elapsed_time
+		# A mensagem é ajustada para a nova condição de vitória
+		$Label.text = "Parabéns! Você venceu!" 
 		$Button2.visible = true
 	else:
 		$Label.text = "Você perdeu..."
@@ -141,8 +156,8 @@ func _on_resp_3_pressed() -> void:
 	$Pergunta/resp3.disabled = true
 	$Pergunta/resp4.disabled = true
 	
-	# GUARDAR: Salva o tempo atual na variável estática. (CORRIGIDO: Removido o 'main.')
-	saved_elapsed_time = elapsed_time 
+	# GUARDAR: Salva o tempo ATUAL (o tempo restante) na variável estática.
+	saved_elapsed_time = elapsed_time
 	
 	# Inicia a contagem
 	_update_continuation_countdown()

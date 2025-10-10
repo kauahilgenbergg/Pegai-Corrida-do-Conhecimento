@@ -1,14 +1,14 @@
 [gd_scene load_steps=76 format=3 uid="uid://4meedtqrgdt6"]
 
 [ext_resource type="Script" uid="uid://bguyne2ktgsuk" path="res://player/player.gd" id="1_b26j0"]
-[ext_resource type="Texture2D" uid="uid://bpl04jmh2mxcc" path="res://assets/Sprites/player_idle_up.png" id="1_sweqy"]
-[ext_resource type="Texture2D" uid="uid://ftk14xa072gr" path="res://assets/Sprites/player_run_down.png" id="2_2hs0m"]
-[ext_resource type="Texture2D" uid="uid://cv8mdrjgimfo" path="res://assets/Sprites/player_idle_down.png" id="2_n7ghd"]
-[ext_resource type="Texture2D" uid="uid://birri2pvwhb3f" path="res://assets/Sprites/player_run_left.png" id="3_1jxqw"]
-[ext_resource type="Texture2D" uid="uid://b5l2hh3mf0r75" path="res://assets/Sprites/player_idle_left.png" id="3_nvl01"]
-[ext_resource type="Texture2D" uid="uid://ost5ii6gwxtq" path="res://assets/Sprites/player_run_right.png" id="4_dw050"]
-[ext_resource type="Texture2D" uid="uid://bg3j8eplvassx" path="res://assets/Sprites/player_idle_right.png" id="4_ivps1"]
-[ext_resource type="Texture2D" uid="uid://b0o5qwlcbe8rq" path="res://assets/Sprites/player_run_up.png" id="5_b26j0"]
+[ext_resource type="Texture2D" uid="uid://c30wk6xux27b1" path="res://assets/Sprites/player_idle_up.png" id="1_sweqy"]
+[ext_resource type="Texture2D" uid="uid://d2nhfbo5ok1ag" path="res://assets/Sprites/player_run_down.png" id="2_2hs0m"]
+[ext_resource type="Texture2D" uid="uid://dwb6wmy18cffe" path="res://assets/Sprites/player_idle_down.png" id="2_n7ghd"]
+[ext_resource type="Texture2D" uid="uid://b4n1qsnep50m6" path="res://assets/Sprites/player_run_left.png" id="3_1jxqw"]
+[ext_resource type="Texture2D" uid="uid://l48as23rog86" path="res://assets/Sprites/player_idle_left.png" id="3_nvl01"]
+[ext_resource type="Texture2D" uid="uid://cpcnf5ifcbf10" path="res://assets/Sprites/player_run_right.png" id="4_dw050"]
+[ext_resource type="Texture2D" uid="uid://der07jesp4i7y" path="res://assets/Sprites/player_idle_right.png" id="4_ivps1"]
+[ext_resource type="Texture2D" uid="uid://cgiwkw5tpas0e" path="res://assets/Sprites/player_run_up.png" id="5_b26j0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fddr8"]
 atlas = ExtResource("2_n7ghd")
@@ -512,7 +512,7 @@ script = ExtResource("1_b26j0")
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_fddr8")
 animation = &"idle_down"
-frame_progress = 0.39091098
+frame_progress = 0.390911
 offset = Vector2(0, -18.56)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

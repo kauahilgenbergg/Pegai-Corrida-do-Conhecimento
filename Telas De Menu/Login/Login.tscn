@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cx264p5efpxfg"]
 
 [ext_resource type="Script" uid="uid://ljl7cj6r4vne" path="res://Telas De Menu/Login/Login.gd" id="1_vqjxh"]
-[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_ce8la"]
+[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="2_ce8la"]
 
 [node name="Login" type="Node2D"]
 
@@ -28,7 +28,7 @@ offset_top = 249.0
 offset_right = 635.0
 offset_bottom = 298.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
 theme_override_font_sizes/font_size = 35
 text = "Primeiro, digite suas informações:"
 
@@ -38,8 +38,8 @@ offset_left = 273.0
 offset_top = 319.0
 offset_right = 629.0
 offset_bottom = 369.0
-theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 1, 1)
+theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
 theme_override_font_sizes/font_size = 30
 
 [node name="LineEdit2" type="LineEdit" parent="Control"]
@@ -48,7 +48,7 @@ offset_left = 273.0
 offset_top = 401.0
 offset_right = 626.0
 offset_bottom = 451.0
-theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
 theme_override_font_sizes/font_size = 30
 
 [node name="Button" type="Button" parent="Control"]
@@ -64,7 +64,7 @@ offset_right = 526.0
 offset_bottom = 682.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(1.92523e-07, 0.5954368, 0.89478993, 1)
+theme_override_colors/font_color = Color(1.92523e-07, 0.595437, 0.89479, 1)
 theme_override_font_sizes/font_size = 100
 text = "Jogar!"
 
@@ -74,7 +74,7 @@ offset_left = 63.0
 offset_top = 401.0
 offset_right = 238.0
 offset_bottom = 450.0
-theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
 theme_override_font_sizes/font_size = 35
 text = "Sua idade:"
 
@@ -84,6 +84,6 @@ offset_left = 61.0
 offset_top = 317.0
 offset_right = 239.0
 offset_bottom = 366.0
-theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
 theme_override_font_sizes/font_size = 35
 text = "Seu nome:"

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dfnqnycgcsgrq" path="res://Telas De Menu/Tela inicial/TelaInicial.gd" id="1_4hdhv"]
 [ext_resource type="PackedScene" uid="uid://cq2rjwskkc24h" path="res://player/playerlobby.tscn" id="2_4wbtd"]
-[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_c223o"]
+[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="2_c223o"]
 
 [node name="TelaInicial" type="Node2D"]
 
@@ -23,7 +23,7 @@ offset_left = 63.0
 offset_top = 31.0
 offset_right = 144.0
 offset_bottom = 73.0
-theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
 theme_override_font_sizes/font_size = 30
 text = "Kauã "
 
@@ -37,7 +37,7 @@ offset_top = 32.0
 offset_right = 328.5
 offset_bottom = 74.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
 theme_override_font_sizes/font_size = 30
 text = "Os Reinos Perdidos"
 
@@ -51,7 +51,7 @@ offset_top = 34.0
 offset_right = 386.0
 offset_bottom = 76.0
 grow_horizontal = 0
-theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
 theme_override_font_sizes/font_size = 30
 text = "Lv. 1"
 
@@ -68,7 +68,7 @@ offset_top = -51.5
 offset_right = 216.0
 offset_bottom = 25.5
 grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0.59607846, 0.89411765, 1)
+theme_override_colors/font_color = Color(0, 0.596078, 0.894118, 1)
 theme_override_font_sizes/font_size = 30
 text = "Biblioteca"
 
@@ -78,7 +78,7 @@ offset_left = 211.0
 offset_top = 673.0
 offset_right = 530.0
 offset_bottom = 818.0
-theme_override_colors/font_color = Color(0, 0.59607846, 0.89411765, 1)
+theme_override_colors/font_color = Color(0, 0.596078, 0.894118, 1)
 theme_override_font_sizes/font_size = 100
 text = "Correr"
 

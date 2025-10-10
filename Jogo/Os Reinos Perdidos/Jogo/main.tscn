@@ -4,8 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://c81qj76k7rqpe" path="res://obstacle/obstacle.tscn" id="2_baq1i"]
 [ext_resource type="PackedScene" uid="uid://4meedtqrgdt6" path="res://player/player.tscn" id="3_f8j8t"]
 [ext_resource type="Script" uid="uid://j2falgjce868" path="res://Jogo/Os Reinos Perdidos/Jogo/scrolling_map.gd" id="4_ujowj"]
-[ext_resource type="Texture2D" uid="uid://cgd0o2v5jeist" path="res://assets/tileset/Solaria Demo Tiles.png" id="5_ojmlw"]
-[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="6_q7l4k"]
+[ext_resource type="Texture2D" uid="uid://dxvabpnik848a" path="res://assets/tileset/Solaria Demo Tiles.png" id="5_ojmlw"]
+[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="6_q7l4k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6rsy8"]
 texture = ExtResource("5_ojmlw")
@@ -392,7 +392,6 @@ size = Vector2(1142, 20)
 y_sort_enabled = true
 script = ExtResource("1_he0p3")
 obstacle_scene = ExtResource("2_baq1i")
-spawn_interval = 0.1
 
 [node name="Player" parent="." instance=ExtResource("3_f8j8t")]
 position = Vector2(360, 810)
@@ -466,7 +465,7 @@ offset_left = 145.0
 offset_top = 801.0
 offset_right = 207.0
 offset_bottom = 824.0
-theme_override_colors/font_color = Color(0.9999998, 0.95101887, 0.1594322, 1)
+theme_override_colors/font_color = Color(1, 0.951019, 0.159432, 1)
 text = "Tempo: "
 
 [node name="Button2" type="Button" parent="."]
@@ -501,7 +500,7 @@ offset_bottom = 903.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Pergunta"]
 position = Vector2(365, 556)
-scale = Vector2(0.28819448, 0.28819448)
+scale = Vector2(0.288194, 0.288194)
 texture = ExtResource("6_q7l4k")
 
 [node name="pergunta" type="Label" parent="Pergunta"]
@@ -514,7 +513,7 @@ offset_top = 449.0
 offset_right = -278.0
 offset_bottom = 521.0
 grow_horizontal = 0
-theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
 theme_override_font_sizes/font_size = 15
 text = "Qual é o objetivo de Elyon em sua jornada?"
 horizontal_alignment = 1

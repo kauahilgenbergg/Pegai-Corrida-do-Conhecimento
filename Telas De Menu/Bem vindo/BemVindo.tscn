@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bsslwh1e5l7ba"]
 
 [ext_resource type="Script" uid="uid://kdjhf1c6wlf" path="res://Telas De Menu/Bem vindo/BemVindo.gd" id="1_8i07h"]
-[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_7mae7"]
+[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="2_7mae7"]
 
 [node name="BemVindo" type="Node2D"]
 
@@ -29,7 +29,7 @@ offset_right = 488.5
 offset_bottom = 248.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
 theme_override_font_sizes/font_size = 30
 text = "Pronto para viajar no mundo da leitura?"
 
@@ -41,12 +41,12 @@ anchor_top = 0.598
 anchor_right = 0.491
 anchor_bottom = 0.598
 offset_left = 89.659
-offset_top = 192.28201
+offset_top = 192.282
 offset_right = 303.659
 offset_bottom = 337.282
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0.59607846, 0.89411765, 1)
+theme_override_colors/font_color = Color(0, 0.596078, 0.894118, 1)
 theme_override_font_sizes/font_size = 100
 text = "Sim!"
 
@@ -60,6 +60,6 @@ offset_top = 305.0
 offset_right = 353.5
 offset_bottom = 388.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
+theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
 theme_override_font_sizes/font_size = 60
 text = "Bem vindo!"
