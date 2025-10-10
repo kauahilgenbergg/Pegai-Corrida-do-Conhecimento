@@ -17,7 +17,7 @@ script = ExtResource("1_4hdhv")
 position = Vector2(360, 450)
 texture = ExtResource("2_c223o")
 
-[node name="Label" type="Label" parent="Control"]
+[node name="jogador" type="Label" parent="Control"]
 layout_mode = 1
 offset_left = 63.0
 offset_top = 31.0
@@ -27,7 +27,7 @@ theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
 theme_override_font_sizes/font_size = 30
 text = "Kauã "
 
-[node name="Label2" type="Label" parent="Control"]
+[node name="historiaAtual" type="Label" parent="Control"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -39,9 +39,9 @@ offset_bottom = 74.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
 theme_override_font_sizes/font_size = 30
-text = "Leitor Master"
+text = "Os Reinos Perdidos"
 
-[node name="Label3" type="Label" parent="Control"]
+[node name="level" type="Label" parent="Control"]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -53,7 +53,7 @@ offset_bottom = 76.0
 grow_horizontal = 0
 theme_override_colors/font_color = Color(0.60784316, 0.83137256, 1, 1)
 theme_override_font_sizes/font_size = 30
-text = "999"
+text = "Lv. 1"
 
 [node name="Playerlobby" parent="Control" instance=ExtResource("2_4wbtd")]
 position = Vector2(376, 621)
@@ -82,32 +82,4 @@ theme_override_colors/font_color = Color(0, 0.59607846, 0.89411765, 1)
 theme_override_font_sizes/font_size = 100
 text = "Correr"
 
-[node name="Sprite2D2" type="Sprite2D" parent="Control"]
-visible = false
-position = Vector2(360, 450)
-texture = ExtResource("2_c223o")
-
-[node name="ContagemLabel" type="Label" parent="Control"]
-visible = false
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -122.5
-offset_top = 218.5
-offset_right = 542.5
-offset_bottom = 301.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 55
-text = "Partida iniciando em ..."
-horizontal_alignment = 1
-
-[node name="ContagemTimer" type="Timer" parent="Control"]
-one_shot = true
-
 [connection signal="pressed" from="Control/Button2" to="Control" method="_on_button_2_pressed"]
-[connection signal="timeout" from="Control/ContagemTimer" to="Control" method="_on_contagem_timer_timeout"]

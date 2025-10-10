@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=3 uid="uid://dipjc54v1clk2"]
+
+[ext_resource type="Script" uid="uid://dasuul1orbele" path="res://Jogo/Os Reinos Perdidos/História Pré Jogo/Tela 2/Tela.gd" id="1_amfiv"]
+[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_xx0gv"]
+[ext_resource type="Texture2D" uid="uid://chvx03c4f5sl2" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_v4uoj"]
+
+[node name="Tela1" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_amfiv")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(360, 450)
+texture = ExtResource("2_xx0gv")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Control"]
+position = Vector2(360, 477)
+scale = Vector2(0.98074317, 1.4837947)
+texture = ExtResource("3_v4uoj")
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 119.0
+offset_top = 327.0
+offset_right = 547.0
+offset_bottom = 684.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(6.016344e-07, 0.17812744, 0.28368703, 1)
+theme_override_font_sizes/font_size = 27
+text = "Depois de dias de caminhada, Elyon chega à Floresta Rubra — um lugar sombrio, tomado pelos Cavaleiros Vermelhos.
+Eles juram lealdade ao caos e guardam os caminhos entre os reinos."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 544.5
+offset_top = 725.5
+offset_right = 632.5
+offset_bottom = 829.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.72357327, 0.88587856, 1, 1)
+theme_override_font_sizes/font_size = 70
+text = ">>"
+
+[connection signal="pressed" from="Control/Button" to="Control" method="_on_button_pressed"]
