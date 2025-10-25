@@ -97,6 +97,10 @@ func game_over(venceu: bool):
 		# A mensagem é ajustada para a nova condição de vitória
 		$Label.text = "Parabéns! Você venceu!" 
 		$Button2.visible = true
+		
+		PlayerData.player_level += 1
+		print("Nível incrementado para: ", PlayerData.player_level) # Mensagem para teste
+		
 	else:
 		$Label.text = "Você perdeu..."
 		# Apenas se perdeu, mostra o Button3 para a segunda chance

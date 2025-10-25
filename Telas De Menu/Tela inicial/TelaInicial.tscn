@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dfnqnycgcsgrq" path="res://Telas De Menu/Tela inicial/TelaInicial.gd" id="1_4hdhv"]
 [ext_resource type="PackedScene" uid="uid://cq2rjwskkc24h" path="res://player/playerlobby.tscn" id="2_4wbtd"]
-[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="2_c223o"]
+[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_c223o"]
 
 [node name="TelaInicial" type="Node2D"]
 
@@ -25,7 +25,7 @@ offset_right = 144.0
 offset_bottom = 73.0
 theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
 theme_override_font_sizes/font_size = 30
-text = "Kauã "
+text = "Nome"
 
 [node name="historiaAtual" type="Label" parent="Control"]
 layout_mode = 1
