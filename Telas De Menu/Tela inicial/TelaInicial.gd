@@ -1,5 +1,19 @@
 extends Node
 
+@onready var name_label = $jogador
+@onready var level_label = $level
+
+func _ready():
+	var current_player_name = PlayerData.player_name
+	
+	if not current_player_name.is_empty():
+		name_label.text = current_player_name
+	else:
+		name_label.text = "Jogador"
+		
+	var current_player_level = PlayerData.player_level
+	level_label.text = "Lv. " + str(current_player_level)
+
 func _on_button_2_pressed() -> void:
 	call_deferred("_trocar_de_tela")
 

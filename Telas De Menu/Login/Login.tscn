@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cx264p5efpxfg"]
 
 [ext_resource type="Script" uid="uid://ljl7cj6r4vne" path="res://Telas De Menu/Login/Login.gd" id="1_vqjxh"]
-[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="2_ce8la"]
+[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_ce8la"]
 
 [node name="Login" type="Node2D"]
 
@@ -38,8 +38,8 @@ offset_left = 273.0
 offset_top = 319.0
 offset_right = 629.0
 offset_bottom = 369.0
-theme_override_colors/font_outline_color = Color(0, 0, 1, 1)
 theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 1, 1)
 theme_override_font_sizes/font_size = 30
 
 [node name="LineEdit2" type="LineEdit" parent="Control"]
