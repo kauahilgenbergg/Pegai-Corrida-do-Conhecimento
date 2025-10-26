@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://p5qwr3syf8id"]
+[gd_scene load_steps=4 format=3 uid="uid://thnl6t0vkgbd"]
 
-[ext_resource type="Script" uid="uid://bvio2n68iv61q" path="res://Jogo/Os Reinos Perdidos/História Pós Jogo/Tela 3/Tela.gd" id="1_hcswq"]
-[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_kdal4"]
-[ext_resource type="Texture2D" uid="uid://chvx03c4f5sl2" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_n8vsn"]
+[ext_resource type="Script" uid="uid://dq8aw0lcq43po" path="res://Jogo/Os Reinos Perdidos/Level 2/História Pós Jogo/Tela 3/Tela.gd" id="1_gl5pf"]
+[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="2_apep5"]
+[ext_resource type="Texture2D" uid="uid://cid8twux3e7jx" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_teato"]
 
 [node name="Tela1" type="Node2D"]
 
@@ -11,16 +11,16 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("1_hcswq")
+script = ExtResource("1_gl5pf")
 
 [node name="Sprite2D" type="Sprite2D" parent="Control"]
 position = Vector2(360, 450)
-texture = ExtResource("2_kdal4")
+texture = ExtResource("2_apep5")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Control"]
 position = Vector2(360, 477)
 scale = Vector2(0.98074317, 1.4837947)
-texture = ExtResource("3_n8vsn")
+texture = ExtResource("3_teato")
 
 [node name="Label" type="Label" parent="Control"]
 layout_mode = 1
@@ -34,9 +34,9 @@ offset_bottom = 672.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(6.016344e-07, 0.17812744, 0.28368703, 1)
 theme_override_font_sizes/font_size = 27
-text = "Algo estranho acontece — o chão treme, e uma sombra se ergue entre as pedras.
-Elyon respira fundo.
-O caminho para o próximo reino o espera — e agora, o perigo é ainda maior."
+text = "Elyon pisa em solo familiar, vitorioso.
+Sua jornada terminou… por enquanto.
+Os Reinos Perdidos podem agora respirar novamente, graças à coragem de um único herói."
 horizontal_alignment = 1
 autowrap_mode = 3
 

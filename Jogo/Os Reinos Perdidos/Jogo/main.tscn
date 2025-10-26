@@ -392,6 +392,7 @@ size = Vector2(1142, 20)
 y_sort_enabled = true
 script = ExtResource("1_he0p3")
 obstacle_scene = ExtResource("2_baq1i")
+spawn_interval = 0.5
 
 [node name="Player" parent="." instance=ExtResource("3_f8j8t")]
 position = Vector2(360, 810)
@@ -499,8 +500,8 @@ offset_right = 724.0
 offset_bottom = 903.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Pergunta"]
-position = Vector2(365, 556)
-scale = Vector2(0.288194, 0.288194)
+position = Vector2(361, 548)
+scale = Vector2(0.51857626, 0.5185763)
 texture = ExtResource("6_q7l4k")
 
 [node name="pergunta" type="Label" parent="Pergunta"]
@@ -508,13 +509,13 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -431.0
-offset_top = 449.0
-offset_right = -278.0
-offset_bottom = 521.0
+offset_left = -517.0
+offset_top = 403.0
+offset_right = -204.625
+offset_bottom = 550.0
 grow_horizontal = 0
 theme_override_colors/font_color = Color(0.607843, 0.831373, 1, 1)
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 24
 text = "Qual é o objetivo de Elyon em sua jornada?"
 horizontal_alignment = 1
 autowrap_mode = 2
@@ -525,44 +526,44 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 272.0
-offset_top = 78.5
-offset_right = 458.0
-offset_bottom = 108.5
+offset_left = 190.0
+offset_top = 72.5
+offset_right = 530.0
+offset_bottom = 102.5
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 15
 text = "Encontrar o frango lendário da Floresta Rubra"
 
 [node name="resp2" type="Button" parent="Pergunta"]
 process_mode = 3
 layout_mode = 0
-offset_left = 274.0
-offset_top = 564.0
-offset_right = 458.0
-offset_bottom = 594.0
+offset_left = 192.0
+offset_top = 573.0
+offset_right = 530.0
+offset_bottom = 603.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 15
 text = "Vingar seu cavalo perdido"
 
 [node name="resp3" type="Button" parent="Pergunta"]
 process_mode = 3
 layout_mode = 0
-offset_left = 276.0
-offset_top = 598.0
-offset_right = 457.0
-offset_bottom = 629.0
-theme_override_font_sizes/font_size = 8
+offset_left = 193.0
+offset_top = 621.0
+offset_right = 527.0
+offset_bottom = 652.0
+theme_override_font_sizes/font_size = 15
 text = "Restaurar os Reinos Perdidos"
 
 [node name="resp4" type="Button" parent="Pergunta"]
 process_mode = 3
 layout_mode = 0
-offset_left = 275.0
-offset_top = 633.0
-offset_right = 458.0
-offset_bottom = 664.0
-theme_override_font_sizes/font_size = 8
+offset_left = 196.0
+offset_top = 670.0
+offset_right = 527.0
+offset_bottom = 701.0
+theme_override_font_sizes/font_size = 15
 text = "Virar aprendiz de um mago preguiçoso"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

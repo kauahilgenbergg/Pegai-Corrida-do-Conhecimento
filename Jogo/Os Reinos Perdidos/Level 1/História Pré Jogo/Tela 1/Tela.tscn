@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=3 uid="uid://6bq5oxyywq3v"]
+
+[ext_resource type="Script" uid="uid://mhg7jvbtitu6" path="res://Jogo/Os Reinos Perdidos/Level 1/História Pré Jogo/Tela 1/Tela.gd" id="1_gtbgi"]
+[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="2_yg50j"]
+[ext_resource type="Texture2D" uid="uid://cid8twux3e7jx" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_dkdtk"]
+
+[node name="Tela1" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_gtbgi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(360, 450)
+texture = ExtResource("2_yg50j")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Control"]
+position = Vector2(360, 477)
+scale = Vector2(0.98074317, 1.4837947)
+texture = ExtResource("3_dkdtk")
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 122.0
+offset_top = 277.0
+offset_right = 550.0
+offset_bottom = 634.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(6.016344e-07, 0.17812744, 0.28368703, 1)
+theme_override_font_sizes/font_size = 27
+text = "Elyon, jovem aventureiro de Valmora, parte para restaurar os Reinos Perdidos.
+O mundo se fragmentou, e a escuridão domina as terras entre os reinos."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 544.5
+offset_top = 725.5
+offset_right = 632.5
+offset_bottom = 829.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.72357327, 0.88587856, 1, 1)
+theme_override_font_sizes/font_size = 70
+text = ">>"
+
+[connection signal="pressed" from="Control/Button" to="Control" method="_on_button_pressed"]

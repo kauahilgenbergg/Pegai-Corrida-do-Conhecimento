@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://dipjc54v1clk2"]
 
-[ext_resource type="Script" uid="uid://dasuul1orbele" path="res://Jogo/Os Reinos Perdidos/História Pré Jogo/Tela 2/Tela.gd" id="1_amfiv"]
-[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_xx0gv"]
-[ext_resource type="Texture2D" uid="uid://chvx03c4f5sl2" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_v4uoj"]
+[ext_resource type="Script" uid="uid://dasuul1orbele" path="res://Jogo/Os Reinos Perdidos/Level 1/História Pré Jogo/Tela 2/Tela.gd" id="1_amfiv"]
+[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="2_xx0gv"]
+[ext_resource type="Texture2D" uid="uid://cid8twux3e7jx" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_v4uoj"]
 
 [node name="Tela1" type="Node2D"]
 
@@ -34,8 +34,8 @@ offset_bottom = 684.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(6.016344e-07, 0.17812744, 0.28368703, 1)
 theme_override_font_sizes/font_size = 27
-text = "Depois de dias de caminhada, Elyon chega à Floresta Rubra — um lugar sombrio, tomado pelos Cavaleiros Vermelhos.
-Eles juram lealdade ao caos e guardam os caminhos entre os reinos."
+text = "Sua primeira provação é atravessar a Floresta Rubra, lar dos Cavaleiros Vermelhos.
+Eles vigiam cada árvore, e cada passo em falso pode ser fatal."
 horizontal_alignment = 1
 autowrap_mode = 3
 

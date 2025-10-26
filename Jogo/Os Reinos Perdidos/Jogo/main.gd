@@ -114,7 +114,7 @@ func _on_button_pressed() -> void:
 func _on_button_2_pressed() -> void:
 	# Botão para avançar na história (Menu)
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://Jogo/Os Reinos Perdidos/História Pós Jogo/Tela 1/Tela.tscn")
+	get_tree().change_scene_to_file("res://Jogo/Os Reinos Perdidos/Level 1/História Pós Jogo/Tela 1/Tela.tscn")
 
 # --- NOVA FUNÇÃO PARA O BUTTON 3 (INICIAR PERGUNTA) ---
 func _on_button_3_pressed() -> void:
@@ -176,7 +176,7 @@ func _update_continuation_countdown() -> void:
 		var timer = get_tree().create_timer(1.0)
 		timer.timeout.connect(_update_continuation_countdown)
 	else:
-		# Fim da contagem: Reinicia a cena. O _ready() pegará o tempo salvo.
+		# Fim da contagem: Reinicia a cenaa. O _ready() pegará o tempo salvo.
 		get_tree().paused = false
 		get_tree().reload_current_scene()
 

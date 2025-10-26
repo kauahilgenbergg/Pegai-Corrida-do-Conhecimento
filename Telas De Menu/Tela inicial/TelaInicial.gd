@@ -6,6 +6,6 @@ func _on_button_2_pressed() -> void:
 # Função para mudar de cena de forma segura
 func _trocar_de_tela():
 	print("Carregando cena de jogo...")
-	var error = get_tree().change_scene_to_file("res://Jogo/Os Reinos Perdidos/História Pré Jogo/Tela 1/Tela.tscn")
+	var error = get_tree().change_scene_to_file("res://Jogo/Os Reinos Perdidos/Level 1/História Pré Jogo/Tela 1/Tela.tscn")
 	if error != OK:
-		print("ERRO: Não foi possível carregar a cena. Verifique se o caminho 'res://Jogo/Os Reinos Perdidos/História Pré Jogo/Tela 1/Tela.tscn")
+		print("ERRO: Não foi possível carregar a cena. Verifique se o caminho 'res://Jogo/Os Reinos Perdidos/Level 1/História Pré Jogo/Tela 1/Tela.tscn")

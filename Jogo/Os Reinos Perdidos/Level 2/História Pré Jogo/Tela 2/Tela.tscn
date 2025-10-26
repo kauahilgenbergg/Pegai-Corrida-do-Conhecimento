@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c6dtjuby80rjy"]
+[gd_scene load_steps=4 format=3 uid="uid://bp8hos4uyofg5"]
 
-[ext_resource type="Script" uid="uid://v7lbjr2soka1" path="res://Jogo/Os Reinos Perdidos/História Pós Jogo/Tela 2/Tela.gd" id="1_egb6h"]
-[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_2y5gv"]
-[ext_resource type="Texture2D" uid="uid://chvx03c4f5sl2" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_vobu7"]
+[ext_resource type="Script" uid="uid://byowt0td3k8q3" path="res://Jogo/Os Reinos Perdidos/Level 2/História Pré Jogo/Tela 2/Tela.gd" id="1_xff6o"]
+[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="2_ay8le"]
+[ext_resource type="Texture2D" uid="uid://cid8twux3e7jx" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_qujh6"]
 
 [node name="Tela1" type="Node2D"]
 
@@ -11,16 +11,16 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("1_egb6h")
+script = ExtResource("1_xff6o")
 
 [node name="Sprite2D" type="Sprite2D" parent="Control"]
 position = Vector2(360, 450)
-texture = ExtResource("2_2y5gv")
+texture = ExtResource("2_ay8le")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Control"]
 position = Vector2(360, 477)
 scale = Vector2(0.98074317, 1.4837947)
-texture = ExtResource("3_vobu7")
+texture = ExtResource("3_qujh6")
 
 [node name="Label" type="Label" parent="Control"]
 layout_mode = 1
@@ -34,8 +34,8 @@ offset_bottom = 684.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(6.016344e-07, 0.17812744, 0.28368703, 1)
 theme_override_font_sizes/font_size = 27
-text = "Ao alcançar o outro lado, ele avista as ruínas do antigo Forte de Myrren.
-O local deveria estar abandonado... mas há luzes acesas e vozes ao longe."
+text = "Cada passo é vigiado pelos Cavaleiros Vermelhos.
+Elyon deve usar astúcia e agilidade para não ser pego."
 horizontal_alignment = 1
 autowrap_mode = 3
 

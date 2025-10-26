@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://6bq5oxyywq3v"]
+[gd_scene load_steps=4 format=3 uid="uid://don52t576djm8"]
 
-[ext_resource type="Script" uid="uid://mhg7jvbtitu6" path="res://Jogo/Os Reinos Perdidos/História Pré Jogo/Tela 1/Tela.gd" id="1_gtbgi"]
-[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_yg50j"]
-[ext_resource type="Texture2D" uid="uid://chvx03c4f5sl2" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_dkdtk"]
+[ext_resource type="Script" uid="uid://c5v5mfhlofv40" path="res://Jogo/Os Reinos Perdidos/Level 2/História Pós Jogo/Tela 1/Tela.gd" id="1_q7emi"]
+[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="2_2fv6w"]
+[ext_resource type="Texture2D" uid="uid://cid8twux3e7jx" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_dbeup"]
 
 [node name="Tela1" type="Node2D"]
 
@@ -11,32 +11,31 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("1_gtbgi")
+script = ExtResource("1_q7emi")
 
 [node name="Sprite2D" type="Sprite2D" parent="Control"]
 position = Vector2(360, 450)
-texture = ExtResource("2_yg50j")
+texture = ExtResource("2_2fv6w")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Control"]
 position = Vector2(360, 477)
 scale = Vector2(0.98074317, 1.4837947)
-texture = ExtResource("3_dkdtk")
+texture = ExtResource("3_dbeup")
 
 [node name="Label" type="Label" parent="Control"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 122.0
-offset_top = 277.0
-offset_right = 550.0
-offset_bottom = 634.0
+offset_left = 119.0
+offset_top = 361.0
+offset_right = 547.0
+offset_bottom = 718.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(6.016344e-07, 0.17812744, 0.28368703, 1)
 theme_override_font_sizes/font_size = 27
-text = "Há muito tempo, os Reinos Perdidos eram um só.
-Mas uma antiga magia corrompeu o mundo, e cada reino se isolou na escuridão.
-Elyon, um jovem aventureiro de Valmora, partiu em busca de restaurar a unidade — e reencontrar seu lar."
+text = "Elyon atravessa a segunda Floresta Rubra.
+As cicatrizes das batalhas permanecem, mas ele agora é mais forte e confiante."
 horizontal_alignment = 1
 autowrap_mode = 3
 

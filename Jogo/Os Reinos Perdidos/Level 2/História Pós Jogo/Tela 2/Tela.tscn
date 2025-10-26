@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bg7gxb2s8yrvq"]
+[gd_scene load_steps=4 format=3 uid="uid://bm3m1gsnickgi"]
 
-[ext_resource type="Script" uid="uid://b7ncwif5sfmx" path="res://Jogo/Os Reinos Perdidos/História Pós Jogo/Tela 1/Tela.gd" id="1_giw6n"]
-[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_evijc"]
-[ext_resource type="Texture2D" uid="uid://chvx03c4f5sl2" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_k3d30"]
+[ext_resource type="Script" uid="uid://dstuk64cyhjle" path="res://Jogo/Os Reinos Perdidos/Level 2/História Pós Jogo/Tela 2/Tela.gd" id="1_lme1p"]
+[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="2_0okh3"]
+[ext_resource type="Texture2D" uid="uid://cid8twux3e7jx" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_414o5"]
 
 [node name="Tela1" type="Node2D"]
 
@@ -11,16 +11,16 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("1_giw6n")
+script = ExtResource("1_lme1p")
 
 [node name="Sprite2D" type="Sprite2D" parent="Control"]
 position = Vector2(360, 450)
-texture = ExtResource("2_evijc")
+texture = ExtResource("2_0okh3")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Control"]
 position = Vector2(360, 477)
 scale = Vector2(0.98074317, 1.4837947)
-texture = ExtResource("3_k3d30")
+texture = ExtResource("3_414o5")
 
 [node name="Label" type="Label" parent="Control"]
 layout_mode = 1
@@ -28,14 +28,14 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = 119.0
-offset_top = 361.0
+offset_top = 327.0
 offset_right = 547.0
-offset_bottom = 718.0
+offset_bottom = 684.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(6.016344e-07, 0.17812744, 0.28368703, 1)
 theme_override_font_sizes/font_size = 27
-text = "Elyon consegue escapar da Floresta Rubra.
-As marcas da batalha ficam para trás, mas o herói sabe: foi só o começo."
+text = "Ao longe, as torres de Valmora surgem, iluminadas pelo sol.
+O herói sente que seu esforço trouxe esperança de volta ao reino perdido."
 horizontal_alignment = 1
 autowrap_mode = 3
 
