@@ -82,4 +82,67 @@ theme_override_colors/font_color = Color(0, 0.596078, 0.894118, 1)
 theme_override_font_sizes/font_size = 100
 text = "Correr"
 
+[node name="ColorRect" type="ColorRect" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 0.656
+offset_left = 153.0
+offset_top = 250.0
+offset_right = 434.5
+offset_bottom = 374.25598
+color = Color(6.016344e-09, 7.219613e-08, 0.18412241, 1)
+
+[node name="funcionalidadeinexistente2" type="Button" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 287.0
+offset_top = 317.5
+offset_right = 438.0
+offset_bottom = 407.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8162427, 0.9575744, 0, 1)
+theme_override_font_sizes/font_size = 59
+text = "OK"
+
+[node name="funcionalidadeinexistente" type="Label" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.5
+offset_top = 281.0
+offset_right = 454.5
+offset_bottom = 491.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.827451, 1, 0, 1)
+theme_override_font_sizes/font_size = 49
+text = "Funcionalidade ainda não implementada!"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="levelinexistente" type="Label" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.5
+offset_top = 281.0
+offset_right = 454.5
+offset_bottom = 491.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.827451, 1, 0, 1)
+theme_override_font_sizes/font_size = 49
+text = "Level ainda não implementado"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[connection signal="pressed" from="Control/Button" to="Control" method="_on_button_pressed"]
 [connection signal="pressed" from="Control/Button2" to="Control" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Control/funcionalidadeinexistente2" to="Control" method="_on_funcionalidadeinexistente_2_pressed"]

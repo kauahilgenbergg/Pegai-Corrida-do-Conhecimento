@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bsslwh1e5l7ba"]
 
 [ext_resource type="Script" uid="uid://kdjhf1c6wlf" path="res://Telas De Menu/Bem vindo/BemVindo.gd" id="1_8i07h"]
-[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="2_7mae7"]
+[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_7mae7"]
 
 [node name="BemVindo" type="Node2D"]
 

@@ -4,8 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://c81qj76k7rqpe" path="res://obstacle/obstacle.tscn" id="2_baq1i"]
 [ext_resource type="PackedScene" uid="uid://4meedtqrgdt6" path="res://player/player.tscn" id="3_f8j8t"]
 [ext_resource type="Script" uid="uid://j2falgjce868" path="res://Jogo/Os Reinos Perdidos/Jogo/scrolling_map.gd" id="4_ujowj"]
-[ext_resource type="Texture2D" uid="uid://dxvabpnik848a" path="res://assets/tileset/Solaria Demo Tiles.png" id="5_ojmlw"]
-[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="6_q7l4k"]
+[ext_resource type="Texture2D" uid="uid://cgd0o2v5jeist" path="res://assets/tileset/Solaria Demo Tiles.png" id="5_ojmlw"]
+[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="6_q7l4k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6rsy8"]
 texture = ExtResource("5_ojmlw")

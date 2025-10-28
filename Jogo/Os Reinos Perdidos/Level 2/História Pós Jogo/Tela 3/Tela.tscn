@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://thnl6t0vkgbd"]
 
 [ext_resource type="Script" uid="uid://dq8aw0lcq43po" path="res://Jogo/Os Reinos Perdidos/Level 2/História Pós Jogo/Tela 3/Tela.gd" id="1_gl5pf"]
-[ext_resource type="Texture2D" uid="uid://cgkdnin16rse1" path="res://assets/telainicio/background.jpg" id="2_apep5"]
-[ext_resource type="Texture2D" uid="uid://cid8twux3e7jx" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_teato"]
+[ext_resource type="Texture2D" uid="uid://crxdd8gcg55vu" path="res://assets/telainicio/background.jpg" id="2_apep5"]
+[ext_resource type="Texture2D" uid="uid://chvx03c4f5sl2" path="res://assets/TelaHistoria/balaoTexto (1).png" id="3_teato"]
 
 [node name="Tela1" type="Node2D"]
 
